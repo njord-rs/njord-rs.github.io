@@ -8,6 +8,8 @@
     { label: 'MariaDB', isReady: false },
     { label: 'ORACLE', isReady: false },
     { label: 'MS SQL Server', isReady: false },
+    { label: 'IBM Db2', isReady: false },
+    { label: 'LDAP', isReady: false },
   ];
 </script>
 
