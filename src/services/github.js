@@ -1,15 +1,15 @@
-import { Octokit } from '@octokit/rest';
 import dayjs from 'dayjs';
+import fetchJsonp from 'fetch-jsonp';
 
 import { createLocalStorageCache } from '../utils/cache';
 
 const GITHUB_CACHE_KEY = 'github';
-const GITHUB_CACHE_TTL = 1000 * 60 * 60; // Cache ttl 1 hour
+const GITHUB_CACHE_TTL = 1000 * 60 * 60 * 4; // Cache ttl 4 hour
 
+const apiBaseUrl = 'https://api.github.com';
 const endpoint = '/repos/njord-rs/njord';
 const repoPath = 'https://github.com/njord-rs/njord';
 
-const octokit = new Octokit();
 const githubCache = createLocalStorageCache();
 
 export async function getRepoStats() {
@@ -49,7 +49,12 @@ export async function getRepoStats() {
 
 async function getStars() {
   try {
-    const { data } = await octokit.request(endpoint);
+    const res = await fetchJsonp(
+      `https://json2jsonp.com/?url=${apiBaseUrl}${endpoint}`,
+      { jsonpCallbackFunction: 'ghStarsJsonpCallback' },
+    );
+
+    const data = await res.json();
 
     return data.stargazers_count;
   } catch (error) {
@@ -61,7 +66,13 @@ async function getStars() {
 //TODO: change version to the latest release with GitHub API later
 // async function getLatestVersion() {
 //   try {
-//     const { data } = await octokit.request(`${endpoint}/releases`);
+//     const res = await fetchJsonp(
+//       `https://json2jsonp.com/?url=${apiBaseUrl}${endpoint}/releases`,
+//       { jsonpCallbackFunction: 'ghReleasesJsonpCallback' },
+//     );
+
+//     const data = await res.json();
+
 //     return data;
 //   } catch (error) {
 //     console.error(error);
@@ -71,7 +82,12 @@ async function getStars() {
 
 async function getCommits() {
   try {
-    const { data } = await octokit.request(`${endpoint}/commits`);
+    const res = await fetchJsonp(
+      `https://json2jsonp.com/?url=${apiBaseUrl}${endpoint}/commits`,
+      { jsonpCallbackFunction: 'ghCommitsJsonpCallback' },
+    );
+
+    const data = await res.json();
 
     return data;
   } catch (error) {
@@ -82,7 +98,12 @@ async function getCommits() {
 
 async function getContributors() {
   try {
-    const { data } = await octokit.request(`${endpoint}/contributors`);
+    const res = await fetchJsonp(
+      `https://json2jsonp.com/?url=${apiBaseUrl}${endpoint}/contributors`,
+      { jsonpCallbackFunction: 'ghContributorsJsonpCallback' },
+    );
+
+    const data = await res.json();
 
     return data;
   } catch (error) {
