@@ -4,7 +4,7 @@
   export let data;
 </script>
 
-<section class="relative w-full h-[50vh] py-20">
+<section class="relative w-full min-h-[50vh] py-20">
   <img
     src="/banner.png"
     class="opacity-5 absolute w-full h-full top-0 left-0 object-cover pointer-events-none"
