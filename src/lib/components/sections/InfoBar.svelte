@@ -15,7 +15,7 @@
       </div>
     </Box>
     <Box
-      text="Njord is a FOSS project, and we welcome your contributions. Whether it's bug fixes, new features, documentation, or other improvements, your help is valuable. Check out our GitHub repository for more information."
+      text="Njord is a OSS project, and we welcome your contributions. Whether it's bug fixes, new features, documentation, or other improvements, your help is valuable. Check out our GitHub repository for more information."
     >
       <div class="text-primary">
         <Code size="48" />
