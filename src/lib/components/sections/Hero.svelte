@@ -20,7 +20,7 @@
       <h1 class="header text-8xl mb-6">Njord</h1>
 
       <p class="text-xl leading-relaxed">
-        A versatile, feature-rich Rust ORM that navigates the vast seas of data with ease and precision.
+        A versatile, feature-rich Rust ORM
       </p>
     </div>
 
