@@ -20,7 +20,7 @@
       <h1 class="header text-8xl mb-6">Njord</h1>
 
       <p class="text-xl leading-relaxed">
-        Lightweight, Extensible ORM and Query Builder for Rust
+        A versatile, feature-rich Rust ORM
       </p>
     </div>
 
