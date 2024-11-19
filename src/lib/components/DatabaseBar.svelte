@@ -8,14 +8,14 @@
     { label: 'MariaDB', isReady: false },
     { label: 'Oracle', isReady: true },
     { label: 'MS SQL Server', isReady: true },
-    { label: 'IBM Db2', isReady: false },
-    { label: 'LDAP', isReady: false },
-    { label: 'Sybase', isReady: false },
-    { label: 'H2', isReady: false },
-    { label: 'Snowflake', isReady: false },
-    { label: 'Microsoft Access', isReady: false },
-    { label: 'Apache Hive', isReady: false },
-    { label: 'Teradata', isReady: false },
+    // { label: 'IBM Db2', isReady: false },
+    // { label: 'LDAP', isReady: false },
+    // { label: 'Sybase', isReady: false },
+    // { label: 'H2', isReady: false },
+    // { label: 'Snowflake', isReady: false },
+    // { label: 'Microsoft Access', isReady: false },
+    // { label: 'Apache Hive', isReady: false },
+    // { label: 'Teradata', isReady: false },
   ];
 </script>
 
