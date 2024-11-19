@@ -5,7 +5,7 @@
     { label: 'SQLite', isReady: true },
     { label: 'PostgreSQL', isReady: false },
     { label: 'MySQL', isReady: true },
-    { label: 'MariaDB', isReady: false },
+    { label: 'MariaDB', isReady: true },
     { label: 'Oracle', isReady: true },
     { label: 'MS SQL Server', isReady: true },
     // { label: 'IBM Db2', isReady: false },
