@@ -27,7 +27,7 @@ export async function getRepoStats() {
     const stargazers = { stars, path: `${repoPath}/stargazers` };
 
     const latestVersion = {
-      version: '0.4.0-alpha',
+      version: '0.5.0-alpha',
       path: `${repoPath}/releases`,
     };
 
