@@ -26,7 +26,7 @@
     "eslint": "^9.28.0",
     "eslint-plugin-svelte": "^3.9.1",
     "postcss": "^8.5.4",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.0",
     "prettier-plugin-tailwindcss": "^0.6.12",
     "svelte": "^5.33.16",
     "svelte-check": "^4.2.1",
