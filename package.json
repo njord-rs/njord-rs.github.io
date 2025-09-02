@@ -15,7 +15,7 @@
     "lint": "eslint njord"
   },
   "dependencies": {
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.18",
     "fetch-jsonp": "^1.3.0"
   },
   "devDependencies": {
